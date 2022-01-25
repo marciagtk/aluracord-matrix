@@ -1,21 +1,6 @@
 import appConfig from '../config.json';
 import { Box, Button, Text, TextField, Image } from '@skynexui/components';
 
-// function Titulo(props) {
-//     const Tag = props.tag || 'h1';
-//     return (
-//       <>
-//         <Tag>{props.children}</Tag>
-//         <style jsx>{`
-//               ${Tag} {
-//                   color: ${appConfig.theme.colors.neutrals['000']};
-//                   font-size: 24px;
-//                   font-weight: 600;
-//               }
-//               `}</style>
-//       </>
-//     );
-// }
 
 function GlobalStyle() {
     return (
@@ -86,7 +71,7 @@ export default function PaginaInicial() {
             display: 'flex', alignItems: 'center', justifyContent: 'center',
             //backgroundColor: appConfig.theme.colors.primary[700],
             backgroundColor:'#184677',
-            backgroundImage: 'url(https://virtualbackgrounds.site/wp-content/uploads/2020/08/the-matrix-digital-rain.jpg)',
+            //backgroundImage: 'url(https://virtualbackgrounds.site/wp-content/uploads/2020/08/the-matrix-digital-rain.jpg)',
             backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundBlendMode: 'multiply',
           }}
         >
