@@ -38,6 +38,7 @@ export default function PaginaInicial() {
     const [username, setUsername] = React.useState('marciagtk');
     const roteamento = useRouter();
 
+
     return (
       <>
         <Box
@@ -151,7 +152,17 @@ export default function PaginaInicial() {
                   borderRadius: '50%',
                   marginBottom: '16px',
                 }}
-                src={`https://github.com/${username}.png`}
+
+                // src={`https://github.com/${username}.png`}
+
+                src={
+                    username.length > 2
+                      ? `https://github.com/${username}.png`
+                      : ''
+                  }
+
+
+
               />
               <Text
                 variant="body4"
